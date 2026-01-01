@@ -328,6 +328,22 @@
             margin: 0 auto;
         }
 
+        /* Mobile Carousel for Packages */
+        .packages-carousel {
+            display: none;
+        }
+
+        .packages-carousel .package-card {
+            margin: 10px 15px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 102, 255, 0.15);
+        }
+
+        .packages-carousel amp-carousel {
+            padding-bottom: 40px;
+        }
+
         .package-card {
             background: #fff;
             border-radius: 24px;
@@ -807,8 +823,11 @@
             }
 
             .packages-grid {
-                grid-template-columns: 1fr;
-                max-width: 500px;
+                display: none;
+            }
+
+            .packages-carousel {
+                display: block;
             }
 
             .stats-grid {
@@ -976,6 +995,56 @@
                             class="btn-package">💬 Pilih Paket</a>
                     </div>
                 </div>
+            </div>
+
+            <!-- Mobile Carousel Version -->
+            <div class="packages-carousel">
+                <amp-carousel width="400" height="620" layout="responsive" type="slides" loop>
+                    <!-- Paket 1 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <amp-img src="assets/images/hero-phones.png" width="400" height="200" layout="responsive"
+                                alt="Paket Couple IMEI"></amp-img>
+                            <div class="package-badge">Popular</div>
+                        </div>
+                        <div class="package-content">
+                            <h3 class="package-title">Imei aktif 3 bulan hanya IDR 240 ribu</h3>
+                            <p class="package-desc">kami support selama masa aktif</p>
+                            <div class="package-divider"></div>
+                            <h4 class="package-name">❤️ Paket Couple IMEI Aktif 3 Bulan</h4>
+                            <p class="package-detail">Aktif untuk dua perangkat dengan keuntungan yang lebih ditawarkan
+                                seperti, durasi lebih panjang 4 bulan, disertai 1 gadgetcover gratis tanpa ribet</p>
+                            <div class="package-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">240.000</span>
+                            </div>
+                            <a href="https://wa.me/6287749140933?text=Halo, saya tertarik dengan Paket Couple IMEI"
+                                class="btn-package">💬 Pilih Paket</a>
+                        </div>
+                    </div>
+                    <!-- Paket 2 -->
+                    <div class="package-card">
+                        <div class="package-image">
+                            <amp-img src="assets/images/hero-phones.png" width="400" height="200" layout="responsive"
+                                alt="Paket 6 Bulan IMEI"></amp-img>
+                            <div class="package-badge premium">Best Value</div>
+                        </div>
+                        <div class="package-content">
+                            <h3 class="package-title">Imei aktif 6 bulan hanya IDR 420 ribu</h3>
+                            <p class="package-desc">kami support selama masa aktif</p>
+                            <div class="package-divider"></div>
+                            <h4 class="package-name">👑 Paket 6 Bulan</h4>
+                            <p class="package-detail">Perpanjangan IMEI selama 6 bulan dengan harga yang lebih hemat!
+                                Nikmati masa aktif yang panjang tanpa perlu repot perpanjangan.</p>
+                            <div class="package-price">
+                                <span class="currency">Rp</span>
+                                <span class="amount">420.000</span>
+                            </div>
+                            <a href="https://wa.me/6287749140933?text=Halo, saya tertarik dengan Paket 6 Bulan IMEI"
+                                class="btn-package">💬 Pilih Paket</a>
+                        </div>
+                    </div>
+                </amp-carousel>
             </div>
         </div>
     </section>
